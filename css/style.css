@@ -8,6 +8,11 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
   }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
   
   .navbar {
     position: sticky;
@@ -139,4 +144,13 @@ button:hover {
   .card:hover {
     transform: scale(1.05);
   }
+
+ 
+  .footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+    background: #eee;
+  }
+  
   
