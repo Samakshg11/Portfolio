@@ -127,4 +127,16 @@
       grid-template-columns: 1fr;
     }
   }
+ 
+button:hover {
+    opacity: 2.0;
+  }
+  
+  .card {
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
   
