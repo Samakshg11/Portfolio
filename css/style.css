@@ -113,3 +113,18 @@
     border: none;
   }
   
+
+@media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+    }
+  
+    .cards {
+      flex-direction: column;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+  
