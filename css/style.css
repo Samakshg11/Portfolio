@@ -90,3 +90,26 @@
     object-fit: cover;
   }
   
+
+.contact {
+    padding: 20px;
+  }
+  
+  .contact-form {
+    width: 300px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form button {
+    padding: 8px;
+    background: blue;
+    color: white;
+    border: none;
+  }
+  
