@@ -54,3 +54,23 @@
     padding: 3rem;
   }
   
+  /* ====================
+   ABOUT PAGE
+==================== */
+.about {
+    padding: 4rem 10%;
+    background: #f9f9f9;
+  }
+  
+  .about-content {
+    max-width: 800px;
+  }
+  
+  .about h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    line-height: 1.6;
+  }
+  
