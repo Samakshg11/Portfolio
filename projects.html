@@ -2,41 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Samaksh</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <h1>Samaksh</h1>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <nav class="navbar">
+    <div class="logo">SAMAKSH</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<section class="projects">
-  <h2>My Projects</h2>
+  <section class="projects fade-in">
+    <h2>Featured Projects</h2>
 
-  <div class="cards">
-    <div class="card">Project 1</div>
-    <div class="card">Project 2</div>
-    <div class="card">Project 3</div>
-  </div>
-</section>
+    <div class="cards">
+      <div class="card">
+        <h3>VitalWatch</h3>
+        <p>A high-fidelity health monitoring dashboard with AI-driven insights and real-time data simulation.</p>
+        <p class="tech-stack">MERN • Socket.io • Framer Motion</p>
+      </div>
+      <div class="card">
+        <h3>QuickFix</h3>
+        <p>A professional service marketplace connecting users with verified technicians instantly.</p>
+        <p class="tech-stack">React • Node.js • MongoDB • Stripe</p>
+      </div>
+      <div class="card">
+        <h3>DevTinder</h3>
+        <p>A specialized networking platform for developers to collaborate and build projects together.</p>
+        <p class="tech-stack">Redux • Express • JWT • AWS</p>
+      </div>
+    </div>
+  </section>
 
-<section class="gallery">
-  <img src="images/img1.jpg">
-  <img src="images/img2.jpg">
-  <img src="images/img3.jpg">
-  <img src="images/img4.jpg">
-  <img src="images/img5.jpg">
-  <img src="images/img6.jpg">
-</section>
-<footer class="footer">
-    <p>© 2026 Samaksh | All Rights Reserved</p>
+  <section class="gallery fade-in">
+    <!-- Using generated images here if paths were available, using placeholders for now -->
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600" alt="Code">
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600" alt="Tech">
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=600" alt="Laptop">
+    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=600" alt="Workspace">
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Samaksh Garg | Designed with Passion</p>
   </footer>
   
 </body>
