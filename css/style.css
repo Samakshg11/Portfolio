@@ -112,6 +112,14 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px dashed var(--secondary);
+  outline-offset: 4px;
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;
@@ -339,6 +347,18 @@ h1, h2, h3, h4 {
 .contact-form button:hover {
   transform: scale(1.02);
   filter: brightness(1.1);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Gallery / Projects images */
