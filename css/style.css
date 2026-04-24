@@ -322,6 +322,18 @@ textarea:focus-visible {
   border-color: var(--primary);
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-link:hover {
+  color: var(--secondary);
+}
+
 /* Contact Section */
 .contact {
   padding: 8rem 10%;
