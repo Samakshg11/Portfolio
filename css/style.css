@@ -199,6 +199,16 @@ textarea:focus-visible {
   box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4);
 }
 
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--primary);
+  margin-left: 1rem;
+}
+
+.btn-outline:hover {
+  border-color: var(--secondary);
+}
+
 /* About Section */
 .about {
   padding: 10rem 10% 5rem;
