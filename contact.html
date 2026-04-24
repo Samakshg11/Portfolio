@@ -25,10 +25,15 @@
     <h2>Let's Connect</h2>
     <p style="text-align: center; color: var(--text-dim); margin-bottom: 3rem;">Ready to bring your next big idea to life? Drop me a message.</p>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+    <form class="contact-form" action="#" method="post" novalidate>
+      <label for="fullName" class="sr-only">Full Name</label>
+      <input id="fullName" name="fullName" type="text" placeholder="Full Name" autocomplete="name" required>
+
+      <label for="emailAddress" class="sr-only">Email Address</label>
+      <input id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" autocomplete="email" required>
+
+      <label for="projectDetails" class="sr-only">Project Details</label>
+      <textarea id="projectDetails" name="projectDetails" rows="5" placeholder="Tell me about your project..." required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
