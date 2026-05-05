@@ -431,6 +431,12 @@ textarea:focus-visible {
   transition: var(--transition);
 }
 
+.form-hint {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin: -0.5rem 0 1.25rem;
+}
+
 .contact-form button:hover {
   transform: scale(1.02);
   filter: brightness(1.1);

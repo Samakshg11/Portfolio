@@ -36,7 +36,8 @@
       <input id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" autocomplete="email" required>
 
       <label for="projectDetails" class="sr-only">Project Details</label>
-      <textarea id="projectDetails" name="projectDetails" rows="5" placeholder="Tell me about your project..." required></textarea>
+      <textarea id="projectDetails" name="projectDetails" rows="5" placeholder="Tell me about your project..." minlength="20" required></textarea>
+      <p class="form-hint">Please include at least 20 characters in your project brief.</p>
       <button type="submit">Send Message</button>
     </form>
   </section>
@@ -52,5 +53,6 @@
   </footer>
   
   <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
