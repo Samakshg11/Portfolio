@@ -440,6 +440,22 @@ textarea:focus-visible {
   border: 0;
 }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -40px;
+  background: var(--text-main);
+  color: var(--bg-dark);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  z-index: 1200;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 /* Gallery / Projects images */
 .gallery {
   display: grid;
