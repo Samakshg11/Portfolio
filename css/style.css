@@ -69,6 +69,8 @@ h1, h2, h3, h4 {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  display: inline-block;
   cursor: pointer;
   transition: var(--transition);
 }
