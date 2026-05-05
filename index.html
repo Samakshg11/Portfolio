@@ -58,7 +58,7 @@
   </section>
 
   <footer class="footer">
-    <p>© 2026 Samaksh Garg | Designed with Passion</p>
+    <p>© <span data-current-year>2026</span> Samaksh Garg | Designed with Passion</p>
     <div class="footer-socials">
       <a href="https://github.com/samakshgarg" target="_blank" rel="noopener noreferrer" aria-label="Visit Samaksh on GitHub">GitHub</a>
       <a href="https://linkedin.com/in/samakshgarg" target="_blank" rel="noopener noreferrer" aria-label="Visit Samaksh on LinkedIn">LinkedIn</a>
@@ -68,18 +68,6 @@
 
   <button id="backToTop" title="Go to top" class="back-to-top">↑</button>
 
-  <script>
-    const backToTop = document.getElementById("backToTop");
-    window.onscroll = function() {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        backToTop.style.display = "block";
-      } else {
-        backToTop.style.display = "none";
-      }
-    };
-    backToTop.onclick = function() {
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    };
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
