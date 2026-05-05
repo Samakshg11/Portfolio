@@ -382,6 +382,12 @@ textarea:focus-visible {
   align-items: center;
 }
 
+.contact-intro {
+  text-align: center;
+  color: var(--text-dim);
+  margin-bottom: 3rem;
+}
+
 .contact-form {
   width: 100%;
   max-width: 500px;
