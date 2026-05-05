@@ -7,6 +7,7 @@ It is built with semantic HTML and a shared CSS stylesheet, with sections for in
 ## Tech Stack
 - HTML5
 - CSS3
+- Vanilla JavaScript
 - Flexbox
 - CSS Grid
 - Media Queries
@@ -18,12 +19,16 @@ It is built with semantic HTML and a shared CSS stylesheet, with sections for in
 - contact.html: Contact form and social links
 - home.html: Redirect page to index.html for backward compatibility
 - css/style.css: Global styles and responsive behavior
+- js/main.js: Shared interactions (back-to-top and dynamic year)
+- js/contact.js: Contact form validation
 
 ## Highlights
 - Consistent metadata across all public pages
 - Keyboard focus states for improved accessibility
+- Skip-to-content links and semantic main landmarks
 - Responsive navigation behavior for mobile screens
 - Contact form with semantic labels and autofill attributes
+- Reduced-motion support for users with motion sensitivity
 - Reusable CSS classes replacing inline style blocks
 
 ## Run Locally
