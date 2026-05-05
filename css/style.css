@@ -546,3 +546,11 @@ textarea:focus-visible {
     padding: 6rem 5% 3rem;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
