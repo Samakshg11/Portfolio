@@ -296,6 +296,14 @@ textarea:focus-visible {
   display: block;
 }
 
+.preview-link:focus-visible,
+.project-link:focus-visible,
+.footer-socials a:focus-visible {
+  outline: 2px dashed var(--secondary);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
 .back-to-top {
   display: none;
   position: fixed;
