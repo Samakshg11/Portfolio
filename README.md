@@ -24,12 +24,14 @@ It is built with semantic HTML and a shared CSS stylesheet, with sections for in
 
 ## Highlights
 - Consistent metadata across all public pages
+- Canonical and robots metadata for cleaner indexing behavior
 - Keyboard focus states for improved accessibility
 - Skip-to-content links and semantic main landmarks
 - Responsive navigation behavior for mobile screens
-- Contact form with semantic labels and autofill attributes
+- Contact form with semantic labels, native constraints, and inline validation feedback
 - Reduced-motion support for users with motion sensitivity
 - Reusable CSS classes replacing inline style blocks
+- Featured project previews that deep-link to specific project entries
 
 ## Run Locally
 1. Clone this repository.
