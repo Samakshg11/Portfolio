@@ -2,7 +2,7 @@
 
 ## Overview
 This repository contains a personal portfolio website for Samaksh Garg.
-It is built with semantic HTML and a shared CSS stylesheet, with sections for introduction, about, projects, and contact.
+It is built with semantic HTML, a shared CSS stylesheet, and lightweight JavaScript for interactions.
 
 ## Tech Stack
 - HTML5
@@ -13,30 +13,29 @@ It is built with semantic HTML and a shared CSS stylesheet, with sections for in
 - Media Queries
 
 ## Project Structure
-- index.html: Main landing page with hero and featured projects preview
-- about.html: About section with profile summary and skills
-- projects.html: Featured projects and visual gallery
-- contact.html: Contact form and social links
-- home.html: Redirect page to index.html for backward compatibility
-- css/style.css: Global styles and responsive behavior
-- js/main.js: Shared interactions (back-to-top and dynamic year)
-- js/contact.js: Contact form validation
+- `index.html`: Main landing page with hero and featured projects preview
+- `about.html`: About page with profile narrative and skills
+- `projects.html`: Featured projects and visual gallery
+- `contact.html`: Contact form and social links
+- `home.html`: Redirect page to `index.html` for backward compatibility
+- `css/style.css`: Global styles and responsive behavior
+- `js/main.js`: Shared interactions (back-to-top and dynamic year)
+- `js/contact.js`: Contact form validation and feedback state
+- `robots.txt`: Crawl directives for search engines
+- `sitemap.xml`: Public page URLs for indexing
 
 ## Highlights
-- Consistent metadata across all public pages
-- Canonical and robots metadata for cleaner indexing behavior
-- Keyboard focus states for improved accessibility
-- Skip-to-content links and semantic main landmarks
-- Responsive navigation behavior for mobile screens
-- Contact form with semantic labels, native constraints, and inline validation feedback
+- Consistent metadata and canonical tags across public pages
+- Skip links and keyboard focus states for accessibility
+- Responsive navigation and section layouts for mobile screens
+- Contact form with semantic labels and inline validation feedback
 - Reduced-motion support for users with motion sensitivity
-- Reusable CSS classes replacing inline style blocks
-- Featured project previews that deep-link to specific project entries
+- Back-to-top button with smooth-scroll behavior
 
 ## Run Locally
 1. Clone this repository.
 2. Open the project folder.
-3. Open index.html in a browser.
+3. Open `index.html` in a browser.
 
 ## Live Demo
-Add your GitHub Pages link once deployed.
+`https://samakshgarg.github.io/portfolio/`
