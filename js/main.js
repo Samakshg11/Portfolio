@@ -2,11 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const backToTop = document.getElementById("backToTop");
 
   if (backToTop) {
-    window.addEventListener("scroll", () => {
-      const isVisible =
-        document.body.scrollTop > 200 || document.documentElement.scrollTop > 200;
+    const toggleBackToTop = () => {
+      const isVisible = window.scrollY > 200;
       backToTop.style.display = isVisible ? "block" : "none";
-    });
+    };
+
+    toggleBackToTop();
+    window.addEventListener("scroll", toggleBackToTop, { passive: true });
 
     backToTop.addEventListener("click", () => {
       const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
