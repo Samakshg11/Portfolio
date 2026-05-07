@@ -439,6 +439,12 @@ textarea:focus-visible {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.contact-form input[aria-invalid="true"],
+.contact-form textarea[aria-invalid="true"] {
+  border-color: #fb7185;
+  box-shadow: 0 0 0 1px rgba(251, 113, 133, 0.35);
+}
+
 .contact-form button {
   width: 100%;
   padding: 1.2rem;
