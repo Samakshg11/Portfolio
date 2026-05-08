@@ -670,6 +670,32 @@ textarea:focus-visible {
   .about, .projects, .contact {
     padding: 6rem 5% 3rem;
   }
+
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-lead {
+    font-size: 1.05rem;
+  }
+
+  .skills li {
+    padding: 0.45rem 1rem;
+  }
+
+  .journey-timeline {
+    padding-left: 1rem;
+  }
+
+  .about-cta {
+    padding: 1rem;
+  }
+
+  .about-cta .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
