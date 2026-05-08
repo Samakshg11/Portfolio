@@ -328,6 +328,18 @@ textarea:focus-visible {
   color: var(--text-dim);
 }
 
+.about-cta {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(139, 92, 246, 0.08));
+}
+
+.about-cta p {
+  margin-bottom: 1rem;
+}
+
 .section-header {
   text-align: center;
   padding: 5rem 0 2rem;
