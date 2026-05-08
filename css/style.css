@@ -282,6 +282,16 @@ textarea:focus-visible {
   margin-bottom: 0.5rem;
 }
 
+.journey-timeline {
+  margin: 1rem 0 2rem;
+  padding-left: 1.2rem;
+  color: var(--text-dim);
+}
+
+.journey-timeline li {
+  margin-bottom: 0.75rem;
+}
+
 .section-header {
   text-align: center;
   padding: 5rem 0 2rem;
