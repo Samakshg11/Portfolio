@@ -223,6 +223,21 @@ textarea:focus-visible {
   margin-bottom: 2rem;
 }
 
+.about-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.about-lead {
+  color: var(--text-main);
+  font-size: 1.2rem;
+  max-width: 60ch;
+}
+
 .about-content p {
   color: var(--text-dim);
   margin-bottom: 1.5rem;
