@@ -41,10 +41,16 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
       formMessage.textContent = `Please correct: ${errors.join(", ")}.`;
       formMessage.classList.add("form-message-error");
+      if (errors.includes("name")) fullName.focus();
+      else if (errors.includes("email")) email.focus();
+      else details.focus();
       return;
     }
 
-    formMessage.textContent = "";
+    event.preventDefault();
+    formMessage.textContent = "Thanks for reaching out. Your message is ready to send.";
     formMessage.classList.remove("form-message-error");
+    form.reset();
+    [fullName, email, details].forEach((field) => field.setAttribute("aria-invalid", "false"));
   });
 });
