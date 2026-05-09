@@ -41,14 +41,16 @@
 
     <form class="contact-form" action="#" method="post" novalidate>
       <label for="fullName" class="sr-only">Full Name</label>
-      <input id="fullName" name="fullName" type="text" placeholder="Full Name" autocomplete="name" minlength="2" maxlength="80" required>
+      <input id="fullName" name="fullName" type="text" placeholder="Full Name" autocomplete="name" minlength="2" maxlength="80" aria-describedby="nameHint" required>
+      <p id="nameHint" class="form-hint">Please enter at least 2 characters.</p>
 
       <label for="emailAddress" class="sr-only">Email Address</label>
-      <input id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" autocomplete="email" inputmode="email" maxlength="120" required>
+      <input id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" autocomplete="email" inputmode="email" maxlength="120" aria-describedby="emailHint" required>
+      <p id="emailHint" class="form-hint">Use a valid email format like name@example.com.</p>
 
       <label for="projectDetails" class="sr-only">Project Details</label>
-      <textarea id="projectDetails" name="projectDetails" rows="5" placeholder="Tell me about your project..." minlength="20" maxlength="1200" required></textarea>
-      <p class="form-hint">Please include at least 20 characters in your project brief.</p>
+      <textarea id="projectDetails" name="projectDetails" rows="5" placeholder="Tell me about your project..." minlength="20" maxlength="1200" aria-describedby="detailsHint" required></textarea>
+      <p id="detailsHint" class="form-hint">Please include at least 20 characters in your project brief.</p>
       <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
       <button type="submit">Send Message</button>
     </form>
