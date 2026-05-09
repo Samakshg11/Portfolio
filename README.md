@@ -26,11 +26,14 @@ It is built with semantic HTML, a shared CSS stylesheet, and lightweight JavaScr
 
 ## Highlights
 - Consistent metadata and canonical tags across public pages
+- Open Graph and Twitter cards for better social sharing previews
+- Structured data (`WebSite`, `Person`, and `ItemList`) for richer indexing
 - Skip links and keyboard focus states for accessibility
 - Responsive navigation and section layouts for mobile screens
 - Contact form with semantic labels and inline validation feedback
 - Reduced-motion support for users with motion sensitivity
 - Back-to-top button with smooth-scroll behavior
+- Project gallery served from local image assets for improved privacy and control
 
 ## Run Locally
 1. Clone this repository.
