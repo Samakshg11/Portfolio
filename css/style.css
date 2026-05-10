@@ -63,6 +63,12 @@ h1, h2, h3, h4 {
   transition: var(--transition);
 }
 
+.navbar.scrolled {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.4);
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: 800;

@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const backToTop = document.getElementById("backToTop");
+  const navbar = document.querySelector(".navbar");
+
+  const toggleNavbarState = () => {
+    if (!navbar) return;
+    navbar.classList.toggle("scrolled", window.scrollY > 24);
+  };
+
+  toggleNavbarState();
+  window.addEventListener("scroll", toggleNavbarState, { passive: true });
 
   if (backToTop) {
     const toggleBackToTop = () => {
