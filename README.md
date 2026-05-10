@@ -19,7 +19,7 @@ It is built with semantic HTML, a shared CSS stylesheet, and lightweight JavaScr
 - `contact.html`: Contact form and social links
 - `home.html`: Redirect page to `index.html` for backward compatibility
 - `css/style.css`: Global styles and responsive behavior
-- `js/main.js`: Shared interactions (back-to-top and dynamic year)
+- `js/main.js`: Shared interactions (back-to-top, dynamic year, and navbar scroll state)
 - `js/contact.js`: Contact form validation and feedback state
 - `robots.txt`: Crawl directives for search engines
 - `sitemap.xml`: Public page URLs for indexing
@@ -34,6 +34,13 @@ It is built with semantic HTML, a shared CSS stylesheet, and lightweight JavaScr
 - Reduced-motion support for users with motion sensitivity
 - Back-to-top button with smooth-scroll behavior
 - Project gallery served from local image assets for improved privacy and control
+
+## Recent Homepage Improvements
+- Improved homepage SEO title and social preview image links
+- Upgraded hero content semantics with a true `<h1>` and better accessibility labels
+- Added recruiter-friendly availability messaging in the hero section
+- Replaced decorative preview backgrounds with lazy-loaded semantic images
+- Enriched structured data with `sameAs` social profile references
 
 ## Run Locally
 1. Clone this repository.
