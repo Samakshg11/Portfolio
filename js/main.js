@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (backToTop) {
     const toggleBackToTop = () => {
       const isVisible = window.scrollY > 200;
-      backToTop.style.display = isVisible ? "block" : "none";
+      backToTop.hidden = !isVisible;
+      backToTop.setAttribute("aria-hidden", String(!isVisible));
     };
 
     toggleBackToTop();
