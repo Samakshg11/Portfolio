@@ -102,13 +102,24 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Samaksh Garg Portfolio",
-      "url": "https://samakshgarg.github.io/portfolio/index.html",
-      "author": {
-        "@type": "Person",
-        "name": "Samaksh Garg"
-      }
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Samaksh Garg Portfolio",
+          "url": "https://samakshgarg.github.io/portfolio/index.html"
+        },
+        {
+          "@type": "Person",
+          "name": "Samaksh Garg",
+          "url": "https://samakshgarg.github.io/portfolio/index.html",
+          "jobTitle": "MERN Stack Developer",
+          "sameAs": [
+            "https://github.com/samakshgarg",
+            "https://linkedin.com/in/samakshgarg",
+            "https://twitter.com/samakshgarg"
+          ]
+        }
+      ]
     }
   </script>
 </body>
