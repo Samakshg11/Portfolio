@@ -383,17 +383,12 @@ textarea:focus-visible {
 }
 
 .card-img {
+  width: 100%;
   height: 200px;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-}
-
-.preview-vitalwatch {
-  background: url('https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=600') center/cover;
-}
-
-.preview-fintech {
-  background: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600') center/cover;
+  object-fit: cover;
+  display: block;
 }
 
 .preview-link {
