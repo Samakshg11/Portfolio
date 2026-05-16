@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const email = document.getElementById("emailAddress");
   const details = document.getElementById("projectDetails");
   const formMessage = document.getElementById("formMessage");
+  const submitButton = form.querySelector('button[type="submit"]');
 
   const getErrors = () => {
     const errors = [];
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fullName.setAttribute("aria-invalid", String(errors.includes("name")));
     email.setAttribute("aria-invalid", String(errors.includes("email")));
     details.setAttribute("aria-invalid", String(errors.includes("project details")));
+    if (submitButton) submitButton.disabled = errors.length > 0;
     return errors;
   };
 
@@ -30,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         formMessage.textContent = "";
         formMessage.classList.remove("form-message-error");
       }
+      formMessage.classList.remove("form-message-success");
     });
   });
 
@@ -41,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
       formMessage.textContent = `Please correct: ${errors.join(", ")}.`;
       formMessage.classList.add("form-message-error");
+      formMessage.classList.remove("form-message-success");
       if (errors.includes("name")) fullName.focus();
       else if (errors.includes("email")) email.focus();
       else details.focus();
@@ -50,7 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     formMessage.textContent = "Thanks for reaching out. Your message is ready to send.";
     formMessage.classList.remove("form-message-error");
+    formMessage.classList.add("form-message-success");
     form.reset();
     [fullName, email, details].forEach((field) => field.setAttribute("aria-invalid", "false"));
+    if (submitButton) submitButton.disabled = true;
   });
+
+  updateState();
 });

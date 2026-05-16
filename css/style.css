@@ -582,9 +582,20 @@ textarea:focus-visible {
   color: #fda4af;
 }
 
+.form-message-success {
+  color: #86efac;
+}
+
 .contact-form button:hover {
   transform: scale(1.02);
   filter: brightness(1.1);
+}
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  filter: none;
 }
 
 .sr-only {
