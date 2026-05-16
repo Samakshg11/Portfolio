@@ -2,11 +2,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const backToTop = document.getElementById("backToTop");
   const navbar = document.querySelector(".navbar");
 
+  const setActiveNavLink = () => {
+    const links = document.querySelectorAll(".nav-links a");
+    if (!links.length) return;
+
+    let current = window.location.pathname.split("/").pop() || "index.html";
+    if (current === "home.html") current = "index.html";
+
+    links.forEach((link) => {
+      const href = link.getAttribute("href");
+      const isActive = href === current;
+      link.classList.toggle("active", isActive);
+      if (isActive) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
+    });
+  };
+
   const toggleNavbarState = () => {
     if (!navbar) return;
     navbar.classList.toggle("scrolled", window.scrollY > 24);
   };
 
+  setActiveNavLink();
   toggleNavbarState();
   window.addEventListener("scroll", toggleNavbarState, { passive: true });
 
