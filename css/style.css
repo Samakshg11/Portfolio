@@ -164,13 +164,13 @@ textarea:focus-visible {
   z-index: -1;
 }
 
-.hero-content h2 {
+.hero-content h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
   line-height: 1.1;
 }
 
-.hero-content h2 span {
+.hero-content h1 span {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -686,7 +686,7 @@ textarea:focus-visible {
 }
 
 @media (max-width: 768px) {
-  .hero-content h2 {
+  .hero-content h1 {
     font-size: 2.5rem;
   }
 
