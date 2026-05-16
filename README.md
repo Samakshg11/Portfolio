@@ -45,7 +45,14 @@ It is built with semantic HTML, a shared CSS stylesheet, and lightweight JavaScr
 ## Run Locally
 1. Clone this repository.
 2. Open the project folder.
-3. Open `index.html` in a browser.
+3. Start a local static server from the project root:
+   - `python3 -m http.server 5500`
+4. Open `http://localhost:5500/index.html` in your browser.
+
+## Deployment Notes
+- Base URL: `https://samakshgarg.github.io/portfolio/`
+- Keep `robots.txt` and `sitemap.xml` aligned with public page URLs.
+- Update structured data URLs when adding new pages.
 
 ## Live Demo
 `https://samakshgarg.github.io/portfolio/`
