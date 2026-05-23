@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const details = document.getElementById("projectDetails");
   const formMessage = document.getElementById("formMessage");
   const submitButton = form.querySelector('button[type="submit"]');
+  if (!fullName || !email || !details || !formMessage) return;
 
   const getErrors = () => {
     const errors = [];
