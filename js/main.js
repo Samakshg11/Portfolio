@@ -7,11 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!links.length) return;
 
     let current = window.location.pathname.split("/").pop() || "index.html";
+    current = current.toLowerCase();
     if (current === "home.html") current = "index.html";
 
     links.forEach((link) => {
-      const href = link.getAttribute("href");
-      const isActive = href === current;
+      const href = link.getAttribute("href") || "";
+      const normalizedHref = href.split("#")[0].split("?")[0].toLowerCase();
+      const isActive = normalizedHref === current;
       link.classList.toggle("active", isActive);
       if (isActive) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");
