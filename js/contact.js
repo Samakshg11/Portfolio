@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!isValid) {
       event.preventDefault();
+      formMessage.setAttribute("aria-live", "assertive");
       formMessage.textContent = `Please correct: ${errors.join(", ")}.`;
       formMessage.classList.add("form-message-error");
       formMessage.classList.remove("form-message-success");
@@ -52,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     event.preventDefault();
+    formMessage.setAttribute("aria-live", "polite");
     formMessage.textContent = "Thanks for reaching out. Your message is ready to send.";
     formMessage.classList.remove("form-message-error");
     formMessage.classList.add("form-message-success");
