@@ -31,8 +31,9 @@ It is built with semantic HTML, a shared CSS stylesheet, and lightweight JavaScr
 - Skip links and keyboard focus states for accessibility
 - Responsive navigation and section layouts for mobile screens
 - Contact form with semantic labels and inline validation feedback
+- Contact form with accessible live-region validation announcements
 - Reduced-motion support for users with motion sensitivity
-- Back-to-top button with smooth-scroll behavior
+- Back-to-top button with smooth-scroll behavior and visibility state management
 - Project gallery served from local image assets for improved privacy and control
 
 ## Recent Homepage Improvements
@@ -41,6 +42,11 @@ It is built with semantic HTML, a shared CSS stylesheet, and lightweight JavaScr
 - Added recruiter-friendly availability messaging in the hero section
 - Replaced decorative preview backgrounds with lazy-loaded semantic images
 - Enriched structured data with `sameAs` social profile references
+
+## Recent Reliability Improvements
+- Fixed back-to-top visibility behavior by aligning CSS with the `hidden` attribute
+- Hardened active-nav matching for URLs that include query params or hash fragments
+- Added robust guards in contact form JavaScript for missing DOM nodes
 
 ## Run Locally
 1. Clone this repository.
