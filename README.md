@@ -62,3 +62,10 @@ It is built with semantic HTML, a shared CSS stylesheet, and lightweight JavaScr
 
 ## Live Demo
 `https://samakshgarg.github.io/portfolio/`
+
+## Contributing
+Contributions are welcome. Open an issue to propose changes or improvements, and send a pull request with a clear, focused description of the change.
+
+## Changelog
+- 2026-06-03: Start: repository scaffold and documentation improvements.
+
