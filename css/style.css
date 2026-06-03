@@ -764,3 +764,22 @@ textarea:focus-visible {
     text-align: center;
   }
 }
+
+@media (min-width: 1200px) {
+  .hero-content h1 {
+    font-size: 5.25rem;
+  }
+
+  .hero {
+    padding: 0 8%;
+  }
+
+  .container {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .navbar {
+    padding: 1.5rem 8%;
+  }
+}
