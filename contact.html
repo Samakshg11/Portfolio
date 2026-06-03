@@ -39,10 +39,10 @@
 
   <main id="main-content">
   <section class="contact fade-in">
-    <h2>Let's Connect</h2>
+    <h2 id="contact-title">Let's Connect</h2>
     <p class="contact-intro">Ready to bring your next big idea to life? Drop me a message.</p>
 
-    <form class="contact-form" action="#" method="post" novalidate>
+    <form class="contact-form" action="#" method="post" novalidate aria-labelledby="contact-title" aria-describedby="formMessage">
       <label for="fullName" class="sr-only">Full Name</label>
       <input id="fullName" name="fullName" type="text" placeholder="Full Name" autocomplete="name" minlength="2" maxlength="80" aria-describedby="nameHint" required>
       <p id="nameHint" class="form-hint">Please enter at least 2 characters.</p>
@@ -55,7 +55,7 @@
       <textarea id="projectDetails" name="projectDetails" rows="5" placeholder="Tell me about your project..." minlength="20" maxlength="1200" aria-describedby="detailsHint" required></textarea>
       <p id="detailsHint" class="form-hint">Please include at least 20 characters in your project brief.</p>
       <p id="formMessage" class="form-message" role="status" aria-live="polite" aria-atomic="true"></p>
-      <button type="submit">Send Message</button>
+      <button type="submit" aria-label="Send message">Send Message</button>
     </form>
   </section>
   </main>
