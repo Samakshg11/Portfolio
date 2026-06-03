@@ -9,19 +9,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const submitButton = form.querySelector('button[type="submit"]');
   if (!fullName || !email || !details || !formMessage) return;
 
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   const getErrors = () => {
     const errors = [];
-    if (fullName.value.trim().length < 2) errors.push("name");
-    if (!email.validity.valid) errors.push("email");
-    if (details.value.trim().length < 20) errors.push("project details");
+    const nameVal = fullName.value.trim();
+    const emailVal = email.value.trim();
+    const detailsVal = details.value.trim();
+
+    if (nameVal.length < 2) errors.push({ field: fullName, message: "Name must be at least 2 characters." });
+    if (!emailPattern.test(emailVal)) errors.push({ field: email, message: "Enter a valid email address." });
+    if (detailsVal.length < 20) errors.push({ field: details, message: "Please provide more details (min 20 characters)." });
     return errors;
   };
 
   const updateState = () => {
     const errors = getErrors();
-    fullName.setAttribute("aria-invalid", String(errors.includes("name")));
-    email.setAttribute("aria-invalid", String(errors.includes("email")));
-    details.setAttribute("aria-invalid", String(errors.includes("project details")));
+    const hasNameError = errors.some(e => e.field === fullName);
+    const hasEmailError = errors.some(e => e.field === email);
+    const hasDetailsError = errors.some(e => e.field === details);
+
+    fullName.setAttribute("aria-invalid", String(hasNameError));
+    email.setAttribute("aria-invalid", String(hasEmailError));
+    details.setAttribute("aria-invalid", String(hasDetailsError));
     if (submitButton) submitButton.disabled = errors.length > 0;
     return errors;
   };
@@ -29,11 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
   [fullName, email, details].forEach((field) => {
     field.addEventListener("input", () => {
       updateState();
-      if (formMessage.classList.contains("form-message-error")) {
-        formMessage.textContent = "";
-        formMessage.classList.remove("form-message-error");
-      }
-      formMessage.classList.remove("form-message-success");
+      formMessage.textContent = "";
+      formMessage.classList.remove("form-message-error", "form-message-success");
     });
   });
 
@@ -44,23 +51,26 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isValid) {
       event.preventDefault();
       formMessage.setAttribute("aria-live", "assertive");
-      formMessage.textContent = `Please correct: ${errors.join(", ")}.`;
+      formMessage.textContent = errors.map(e => e.message).join(" ");
       formMessage.classList.add("form-message-error");
       formMessage.classList.remove("form-message-success");
-      if (errors.includes("name")) fullName.focus();
-      else if (errors.includes("email")) email.focus();
-      else details.focus();
+      // focus the first invalid field
+      errors[0].field.focus();
       return;
     }
 
     event.preventDefault();
     formMessage.setAttribute("aria-live", "polite");
-    formMessage.textContent = "Thanks for reaching out. Your message is ready to send.";
+    formMessage.textContent = "Thanks for reaching out — your message is ready to send.";
     formMessage.classList.remove("form-message-error");
     formMessage.classList.add("form-message-success");
     form.reset();
     [fullName, email, details].forEach((field) => field.setAttribute("aria-invalid", "false"));
-    if (submitButton) submitButton.disabled = true;
+    if (submitButton) {
+      submitButton.disabled = true;
+      // re-enable after a short delay so user can interact again
+      setTimeout(() => submitButton.disabled = false, 1500);
+    }
   });
 
   updateState();
