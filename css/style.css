@@ -11,6 +11,8 @@
   --glass-border: rgba(255, 255, 255, 0.1);
   --nav-bg: rgba(10, 10, 10, 0.8);
   --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --container-padding: 10%;
+  --max-width: 1200px;
 }
 
 * {
@@ -28,6 +30,14 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+}
+
+/* Utility: central container with consistent horizontal padding */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
 h1, h2, h3, h4 {
